@@ -1,5 +1,5 @@
-# Introducing reveal.js
-A web based presentation framework
+# תוכנה אחת, שני מעבדים
+הקוד שאנו כותבים רץ על המסך ועל התפיסה שלנו
 
 
 
