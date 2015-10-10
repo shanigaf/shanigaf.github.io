@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>SG</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -27,6 +27,13 @@
 			link.type = 'text/css';
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
+			
+			
+			
+			function imageSize(a) {
+				if (a.height == 600)
+				{ a.height='950'; a.width='950' } else { a.height='600'; a.width='600' }
+			}
 		</script>
 
 		<!--[if lt IE 9]>
@@ -40,34 +47,98 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+			<!-- vertical slides -->
+			<!-- 
 				<section>
-					<h1>תפיסת התוכנה</h1>
-					<h3>תוכנה אחת - שני מעבדים</h3>
-					<p>
-						<small>נכתב ע"י שני גפניאל</small>
-					</p>
+					<section data-background="images/fixed-static-layout.png">
+					</section>
+					<section data-background="images/fixed-static-layout2.png">
+					</section>
+					<section data-background="images/fixed-static-layout3.png">				
+					</section>
+					<section data-background="images/fixed-static-layout4.png">
+					</section>
+					<section data-background="images/fixed-static-layout5.png">
+					</section>
+					<section data-background="images/fixed-static-layout6.png">
+					</section>
+				</section>
+				-->
+			
+				<section title="Hello :)" data-background="images/file2751298196939.jpg">
+					<style type="text/css">
+						#imgIdPP {
+							border: 0px solid #fff;							
+							max-width: 400%;
+							max-height: 400%;
+							background: rgba(255, 255, 255, 0);
+						}
+					</style>
+					<img src="images/logos/cooltext141769427646858.png"  
+							style="position:absolute; TOP:165px; LEFT:270px; WIDTH:520px; HEIGHT:70px" 
+						 alt="תפיסת התוכנה" id="imgIdPP">
+				</section>
+						
+				<section title="Lamps Animation">				
+					<img data-src="images/lamps-animation-small.gif">
 				</section>
 				
-				<section>
-					<h3>השלימו את המילה החסרה:</h3>
-					<h1>כחול&nbsp;&nbsp;&nbsp;לבן&nbsp;&nbsp;&nbsp;ורוד&nbsp;&nbsp;&nbsp;...</h1>
+				<section title="Staircases">	
+					<section>
+						<video data-autoplay src="images/27093c25-8e4b-4768-bd2f-21134e2aa3fe.mp4" 
+								type="video/mp4" muted class="stretch" >
+						</video>
+					</section>
+					<section>				
+						<img data-src="images/01837966e04ab8be87fa159770cf2eba4423961d26.jpg" class="stretch" >
+					</section>
+					<section data-background="images/01837966e04ab8be87fa159770cf2eba4423961d26.jpg">
+					</section>
+				</section>
+
+				<section title="Puzzle">
+					<section>
+						<h3>השלימו את המילה החסרה:</h3>
+						<h1>כחול&nbsp;&nbsp;&nbsp;לבן&nbsp;&nbsp;&nbsp;ורוד&nbsp;&nbsp;&nbsp;.....</h1>
+					</section>					
+					<section>
+						<h3>השלימו את המילה החסרה:</h3>
+						<table>
+							<tbody>
+								<tr>
+									<td><h1>כחול</h1></td>
+									<td><h1>לבן</h1></td>															
+								</tr>
+								<tr>								
+									<td><h1>ורוד</h1></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
 				</section>
 				
-				<section>
-					<h3>השלימו את המילה החסרה:</h3>
-					<table>
-						<tbody>
-							<tr>
-								<td><h1>לבן</h1></td>
-								<td><h1>כחול</h1></td>								
-							</tr>
-							<tr>
-								<td> </td>
-								<td><h1>ורוד</h1></td>								
-							</tr>
-						</tbody>
-					</table>
+				<section title="Convene a Message">	
+					<section data-background="images/file000349704322.jpg">	
+						<h2 style="color:white;position:absolute; TOP:600px; LEFT:0px; width:800px; background:rgba(0, 102, 204, 0.9);">
+							בשביל להצליח צריך לעבוד קשה
+						</h2>
+					</section>
+					<section data-background="images/long-road-erik-johansson.jpg">						
+						<h2 style="color:white;position:absolute; TOP:570px; LEFT:0px; width:800px; background:rgba(0, 102, 204, 0.9);">
+							אם אתה לא מוצא דרך להצלחה, תסלול אותה בעצמך
+						</h2>
+					</section>
 				</section>
+				
+				<!--
+				<section>				
+					<img data-src="images/wl.jpg" height="600" width="600">
+				</section>
+				<section >
+					<img data-src="images/ll.jpg" height="600" width="600" onclick='imageSize(this)'>
+				</section>
+				-->
 				
 				<!--
 				<section data-markdown="slides.md" data-separator="^\n\n\n" data-vertical="^\n\n"></section>
